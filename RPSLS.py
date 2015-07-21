@@ -1,7 +1,7 @@
 import random
 
 
-//Takes a string and converts it to an int
+# Takes a string and converts it to an int
 def name_to_number(name):
     if name == "rock":
         x = 0
@@ -18,7 +18,7 @@ def name_to_number(name):
     return x
 
 
-//Takes an int an converts it to a string
+# Takes an int an converts it to a string
 def number_to_name(number):
     if number == 0:
         y = "rock"
@@ -35,7 +35,7 @@ def number_to_name(number):
     return y
 
 
-//Prints out the framework of the game and compares the two choices to determine victory the print the winner or a tie.
+# Prints out the framework of the game and compares the two choices to determine victory the print the winner or a tie.
 def rpsls(player_choice):
     player_number = name_to_number(player_choice)
     computer_choice = random.randrange(0, 5)
